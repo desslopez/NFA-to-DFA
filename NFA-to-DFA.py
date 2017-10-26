@@ -1,6 +1,18 @@
 # Desiree Lopez Ramirez A01371590
 # Sandra Rodriguez Oseguera A01371995
 
+def powerset(seq):
+    """
+    Returns all the subsets of this set. This is a generator.
+    """
+    if len(seq) <= 1:
+        yield seq
+        yield []
+    else:
+        for item in powerset(seq[1:]):
+            yield [seq[0]]+item
+            yield item
+
 
 fname = input("Introduce el nombre del archivo: ")
 file = open(fname, 'r')
@@ -16,7 +28,7 @@ for item in estados:
     item = item.strip('()').split(',')
     lista_edos.append(item)
 
-print(lista_edos)
+#print(lista_edos)
 lista_edos2 = [lista_edos[0]]
 
 # para tener agrupadas todas las transiciones ej: (0,p,q),(0,p,p)= (0,p,pq)
@@ -30,4 +42,10 @@ for i in range(1, len(lista_edos)):
         lista_edos2.append(lista_edos[i])
 lista_edos = []
 
-print(lista_edos2)
+
+h = powerset(lista_edos2)
+for k in h:
+    print(k)
+
+
+
