@@ -40,10 +40,18 @@ for i in range(1, len(lista_edos)):
             flag = 1
     if flag == 0:
         lista_edos2.append(lista_edos[i])
-lista_edos = []
 
 
-h = powerset(lista_edos2)
+#dividimos en dos listas (transicion con 0, transicion con 1)
+lista_edosA = [lista_edos2[0]]
+lista_edosB = []
+for i in range(1, len(lista_edos2)):
+    if lista_edos2[i][0] == lista_edosA[0][0]:
+        lista_edosA.append(lista_edos2[i])
+    else:
+        lista_edosB.append(lista_edos2[i])
+
+h = powerset(lista_edosA)
 for k in h:
     print(k)
 
