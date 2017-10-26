@@ -9,5 +9,10 @@ estados = file.read().strip('{}').split('),')
 file.close()
 lista_edos=[]
 for item in estados:
-    lista_edos.append(re.sub('[(,)]', '', item))
+    #lista_edos.append(re.sub('[(,)]', '', item)) Si queremos tratarlo como string
+
+    #Si queremos tratarlo como lista con listas dentro
+    item=item.strip('()').split(',')
+    lista_edos.append(item)
+
 print(lista_edos)
