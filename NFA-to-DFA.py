@@ -86,7 +86,13 @@ def main():
     setResultado = str(set1.union(set2))
     setResultado=re.sub('\'', '', setResultado)
     setResultado=re.sub(' ', '', setResultado)
-    print(setResultado)
+    
+    lista_tem=[]
+    lista_tem=setResultado.split(")")
+
+    for item in lista_tem:
+        print(item+")")
+
     resultado.write(setResultado)
     resultado.close()
 
