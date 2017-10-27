@@ -89,11 +89,10 @@ def main():
     
     lista_tem=[]
     lista_tem=setResultado.split(")")
-
     for item in lista_tem:
         print(item+")")
-
-    resultado.write(setResultado)
+        resultado.write(item+")\n")
+    
     resultado.close()
 
 if __name__ == "__main__":
