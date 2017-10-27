@@ -1,1 +1,1 @@
-{(0,pq,pqr),(0,p,pq),(0,qrs,rss),(1,pq,pr),(0,pqr,pqrs),(0,q,r),(0,r,s),(1,ps,ps),(0,s,s),(1,qs,rs),(1,p,p),(0,rs,ss),(0,pqs,pqrs),(0,ps,pqs),(0,qr,rs),(1,q,r),(0,qs,rs),(0,pr,pqs),(),(0,pqrs,pqrss),(1,pqs,prs),(1,s,s),(0,prs,pqss)}
+{(0,qrs,rss),(1,qs,rs),(0,pqrs,pqrss),(0,pqr,pqrs),(0,s,s),(1,pqs,prs),(0,pqs,pqrs),(0,prs,pqss),(0,qr,rs),(0,rs,ss),(0,q,r),(0,qs,rs),(0,r,s),(1,ps,ps),(1,q,r),(1,pq,pr),(1,s,s),(1,p,p),(),(0,pq,pqr),(0,ps,pqs),(0,pr,pqs),(0,p,pq)}

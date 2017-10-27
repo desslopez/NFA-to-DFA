@@ -88,6 +88,7 @@ def main():
     setResultado=re.sub(' ', '', setResultado)
     print(setResultado)
     resultado.write(setResultado)
+    resultado.close()
 
 if __name__ == "__main__":
     main()
